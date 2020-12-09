@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+/*.clear:after {content: ''; display: block; clear: both;}*/
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
+
+/*헤더영역*/
+#wrap {width: 100%; }
+#nav_top {width: 100%; height: 32px; background-color: black;}
+#nav_top p a {display: block; color: #fff; text-align: center; font-size: 12px; line-height: 32px; font-family: 'Nanum Gothic', sans-serif;}
+#nav_header { width: 100%;}
+#nav_header:after {content: ''; display: block; clear: both;}
+#nav_header #logo {display: inline-block; position: absolute; left: 50%; transform: translateX(-50%); margin-top: 13.5px}
+#nav_header {overflow: hidden;}
+#nav_header .nav_menu {padding-left: 48px;  float:left;}
+
+#nav_header .nav_menu li {float: left; margin: 0 10px; font-size: 12px; font-weight: bold; line-height: 77px; font-family: 'Nanum Gothic', sans-serif;}
+#nav_header .nav_menu .nav_menu_shop { position: absolute; display: none; width: 100%; height: 384px;  z-index: 10; background: #fff;}
+#nav_header .nav_menu .nav_menu_shop li {margin-left: 30px;}
+#nav_header .nav_menu .nav_menu_shop .headerimg {position: absolute; right: 65px; margin: 30px 0 0;}
+#nav_header .nav_menu li:hover > a {opacity: 0.5; transition: 0.5s;}
+#nav_header .nav_menu li:hover > .nav_menu_shop {display: block; transition: 1s; }
+#nav_header .join_menu {float: right; padding-right: 48px;}
+#nav_header .join_menu li:hover > a {opacity: 0.5;}
+#nav_header .join_menu li {float: left; margin: 0 10px; font-size: 12px; font-weight: bold; line-height: 77px; font-family: 'Nanum Gothic', sans-serif; }
+
+/*슬라이드*/
+.slide {width: 100%; position: relative; overflow: hidden; height: 770px;}
+.slide>ul {width: 300%; overflow: hidden; position: relative; height:770px; top:0;}
+.slide>ul>li {width: 33.33%; float: left; position: relative;}
+.slide>ul>li {animation: myani2 8s infinite;}
+
+@keyframes myani2{
+    0%{left: 0;}
+    50%{left: -33.33%;}
+    100%{left: -66.66%;}
+}
+
+@media (min-width:0px) and (max-width:766px) {
+    #nav_top {display:none;}
+    #nav_header { width: 100%; height: 77px; color: #fff;}
+    #nav_header > .nav_menu li,
+    #nav_header > .join_menu li
+    {display: none;}
+    #main > .center > h1 {display: none;} 
+    #main .slide {width: 100%;}
+    #event02 {width: 100%;}
+    #event {display: none;}
+    #video {display: none;}
+    #event02 {display: none;}
+    #bestseller {display: none;}
+    #bestseller .bestseller_img {display: none;}
+    #bestseller .bestseller_img .1st {display: block;}
+    #main2 {display: none;}
+    #video02 {display: none;}
+    #recommed {display: none;}
+    #brandst h1 {padding: 70px 0 0 0; font-size: 15px;}
+    footer .co {display:none;}
+
+    
+}
+
+
+
+
+/*메인이미지*/
+#main {position: relative; clear: both;}
+#main h1 {position: absolute; top: 287px; left: 675px; font-size: 60px; color: #fff; text-align: center; font-family: 'Nanum Gothic', sans-serif;}
+#main .sn {position: absolute; left: 50%; transform:translateX(-50%); display: inline-block; position: absolute; bottom: 50px; font-size: 15px; color: #fff; border: solid 1px; padding: 15px 70px; text-align: center; }
+#main a {color: #fff;}
+
+#event {position: relative; width: 100%; height: 1080px; margin: 0 auto;}
+#event .event_con h1 {font-size: 50px; text-align: center; padding: 150px 0 0 ;}
+#event .event_con {margin: 0 auto; position: absolute; left: 50%; transform: translateX(-50%)}
+#event .event_con .event1 {font-size: 11px;  margin: 0 0 237px 58px;}
+
+/*비디오1*/
+#video {position: relative; margin: 0 auto; width: 100%; height:1080px;}
+#video .video_main {position: absolute; top: 0; left: 0;}
+
+#event02 {position: relative; width: 100%; height: 1000px;}
+#event02 .event02_img li {float: left; width: 50%;}
+#event02 h2 {font-size: 50px; color:#fff; font-family: 'Nanum Gothic', sans-serif;}
+#event02  .t1 {position: absolute; top: 366px; left: 157px;}
+#event02  .t2 {position: absolute; top: 366px; left: 1170px;}
+
+#bestseller h1 { font-size: 50px; text-align: center; padding: 50px 0 80px 0; font-family: 'Nanum Gothic', sans-serif;}
+#bestseller .bestseller_img {overflow: hidden; margin-left: 30px;}
+#bestseller .bestseller_img li { float: left; width: 33.33%;}
+#bestseller .bestseller_img .evt {font-size: 11px; margin: 30px 0 224px 0;}
+#bestseller .bestseller_img .evt .txt {color: #9f9f9f;}
+
+#main2 {position: relative; margin: 0 auto; width: 100%; height: 885px;}
+#main2 h1 {position: absolute; top: 40%; left: 50%; transform:translateX(-50%);  color: #fff;  font-size: 60px; font-family: 'Nanum Gothic', sans-serif;}
+#main2 .sn {position: absolute; left: 50%; transform:translateX(-50%); display: inline-block;  bottom: 50px; font-size: 15px; color: #fff; border: solid 1px; padding: 15px 70px; text-align: center;}
+#main2 .sn a {color: #fff;}
+
+/*비디오*/
+#video02 {margin: 0 auto; width: 100%; height: 840px;}
+
+#recommed {width:100%; height: 1200px; margin: 0 auto; }
+#recommed h1 {font-size: 60px; text-align: center; font-family: 'Nanum Gothic', sans-serif; padding: 157px 0 70px;}
+#recommed ul {overflow: hidden;}
+#recommed li {float: left; width: 33.33%;}
+#recommed .recommed_img {margin: 0 auto; margin-left: 30px;}
+#recommed .recommed_img .evt {padding: 30px 0 0; font-size: 11px; _font-family: 'Nanum Gothic', sans-serif;}
+#recommed .recommed_img .evt span {color: #9f9f9f;}
+
+
+#brandst {position: relative; margin: 0 auto; width: 100%; height:397px; }
+#brandst h1 {font-size: 35px; letter-spacing: 4px; text-align: center; line-height: 48px; font-family: 'Nanum Gothic', sans-serif;}
+#brandst .bs {position: absolute; left: 50%; transform: translateX(-50%); display: inline-block; font-size: 20px; border: solid 1px; padding: 15px 70px; margin: 52px 0 194px 0;}
+
+footer {position: relative; width: 100%; height: 355px; background-color: #000;}
+footer .footer_txt {padding: 60px 0 111px 206px; font-size: 11px;}
+footer ul .txt1 {color: #fff; font-size: 11px;}
+footer ul .txt2 {color: #7f7f7f;}
+footer .right {float: right; position: absolute; right:228px; top:63px; font-size: 11px;}
+footer .right li {float:left; color: #fff;}
+footer .right li a {display: inline-block; color: #606060;}
+footer .right .co {padding-left: 150px;}
+
+
+
+
+
+
+
+
+
